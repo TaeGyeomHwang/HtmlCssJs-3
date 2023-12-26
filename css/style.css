@@ -7,7 +7,7 @@
 #container {
   margin-left: 0; /* 왼쪽 정렬 */
   width: 1000px;  /* 너비 지정 */
-  overflow: hidden;
+  overflow: hidden; /* 넘치는 부분 자르기 */
 }
 
 a {
@@ -170,7 +170,7 @@ img{
 /* 바로가기 */
 #direct{
   background: url("../resource/Contents/direct/direct.jpg") center center;
-  overflow: hidden; /* 넘치는 부분 자르기 */
+  overflow: hidden; 
 	display: flex;
 	justify-content: center;  /* 컨테이너의 중앙으로 가로 정렬 */
 	align-items: center;
