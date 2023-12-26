@@ -37,8 +37,9 @@ nav{
   float: left;
   width: 100%;
 }
+/* 메인메뉴 */
 .mainMenu>li{
-  position: relative;
+  position: relative; /* 서브메뉴 플로팅 위한 position 설정 */
 }
 .mainMenu>li>a{
   display: block;
@@ -47,9 +48,10 @@ nav{
   padding: 10px;
   font-weight: bold;
 }
+/* 서브메뉴 */
 .subMenu{
   display: none;
-  position: absolute;
+  position: absolute; /* 플로팅 위해서 position 설정 */
   background-color: rgba(0, 0, 0, 0.5);
   margin: 0;
   left: 200px;
@@ -64,6 +66,7 @@ nav{
 .subMenu>li>a{
   color: #fff;
 }
+/* 호버 시 애니메이션 설정 */
 .subMenu>li:hover>a{
   color: #ff5733;
 }
@@ -121,12 +124,12 @@ img{
   width: 100%;
   height: 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* 요소 사이에 일정한 간격으로 가로 정렬 */
   margin-top: 10px;
   margin-bottom: 10px;
 }
 #contents>div{
-  width: 33.3%;
+  width: 33.3%; /* 각 영역 3등분 */
 }
 #contents h4{
   width: 33%;
@@ -149,7 +152,7 @@ img{
   padding: 13px;
 }
 #notice li:nth-child(even){
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.05);  /* 짝수번째만 배경색 지정 */
 }
 #notice li span{
   float: right;
@@ -160,16 +163,16 @@ img{
 }
 #gallery ul{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around;  /* 요소 주위에 일정한 간격으로 가로 정렬 */
   align-items: center;
   padding: 5px;
 }
 /* 바로가기 */
 #direct{
   background: url("../resource/Contents/direct/direct.jpg") center center;
-  overflow: hidden;
+  overflow: hidden; /* 넘치는 부분 자르기 */
 	display: flex;
-	justify-content: center;
+	justify-content: center;  /* 컨테이너의 중앙으로 가로 정렬 */
 	align-items: center;
 }
 #direct a{

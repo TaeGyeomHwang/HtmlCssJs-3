@@ -1,9 +1,9 @@
-window.onload = function () {
+window.onload = function () { /* 문서가 준비된 이후 실행 */
   showSlides();
   showModal();
 }
 
-function showSlides() {
+function showSlides() { /* 이미지 슬라이드 자동으로 실행하는 함수 */
   let current = 1;
   let imgSlide = document.getElementById("imgSlide");
   let images = imgSlide.getElementsByTagName('a');
@@ -19,7 +19,7 @@ function showSlides() {
   }, 3000);
 }
 
-function showModal(){
+function showModal(){ /* 모달 영역 표시하는 함수 */
   let modal = document.querySelector('#modalWrap');
   let notice = document.querySelector('#notice > ul > li:first-child');
   let button = document.querySelector('.btn');
